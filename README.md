@@ -46,8 +46,8 @@ The Qlik Sense Extension Usage Dashboard is a Qlik application that parses appli
 ## Analysis
 
 The application will provide insight into what Qlik apps use extensions and on what sheet inside of that application the extension resides. The sheets are divided into:
-* *KPIs*: High level KPIs of the use of Extensions across the Qlik site
-* *Extension Overview*: A detail sheet to allow the user to see extension use across sheets. Included is a filter for extensions which are not used in any Qlik app.
-* *Migration Sheet*: A mapping of apps which use extensions which have been added to Qlik’s bundles. These apps can be easily edited to use objects which are now supported by Qlik.
+* **KPIs**: High level KPIs of the use of Extensions across the Qlik site
+* **Extension Overview**: A detail sheet to allow the user to see extension use across sheets. Included is a filter for extensions which are not used in any Qlik app.
+* **Migration Sheet**: A mapping of apps which use extensions which have been added to Qlik’s bundles. These apps can be easily edited to use objects which are now supported by Qlik.
   * The Dashboard Bundle, first released in Qlik Sense Enterprise November 2018
   * The Visualization Bundle, first released in Qlik Sense Enterprise February 2019
