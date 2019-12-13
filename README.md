@@ -3,7 +3,7 @@
 [![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 
 # Qlik Sense Extension Usage Dashboard
-
+#### Download Latest [Here](https://github.com/eapowertools/qs-extension-usage-dashboard/releases/latest)
 The Qlik Sense Extension Usage Dashboard is a Qlik application that parses application meta-data to uncover which applications use extension objects. The sources for this data are the meta-data fetch from the [Qlik Sense Telemetry project](https://github.com/eapowertools/qs-telemetry-dashboard) and QRS API calls. By combining these, we can see which apps use extensions, where those extensions are used, who are the users who use extensions, which extensions are _not_ used, as well as which extension usages could be replaced by a bundled visualization from Qlik.
 
 ## Questions answered by the app
