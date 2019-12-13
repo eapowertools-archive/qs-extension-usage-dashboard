@@ -28,7 +28,7 @@ The Qlik Sense Extension Usage Dashboard is a Qlik application that parses appli
 ## Installation
 
 * Have [Qlik Sense Telemetry project](https://github.com/eapowertools/qs-telemetry-dashboard) installed
-* Import Extension Usage Dashboard.qvf
+* Import `Extension Usage Dashboard.qvf`
 
 ## Configuration
 
@@ -51,3 +51,14 @@ The application will provide insight into what Qlik apps use extensions and on w
 * **Migration Sheet**: A mapping of apps which use extensions which have been added to Qlik’s bundles. These apps can be easily edited to use objects which are now supported by Qlik.
   * The Dashboard Bundle, first released in Qlik Sense Enterprise November 2018
   * The Visualization Bundle, first released in Qlik Sense Enterprise February 2019
+
+
+
+## Limitations
+
+The tool will _not_ record apps which reference extensions which do not exist on the server. Example:
+
+![5](../assets/qs-invalid-visualzation.png)
+
+The rationale for this is that in order to determine which visualizations are extensions, (a) we either need to query the installed extensions by name (e.g. `barchart-extension`) or (b) inline load a list of visualizations which come with Qlik Sense Enterprise on Windows. (a) will miss usages of visualizations which are not installed, like above. (b) would require that users upgrade this app upon each release of Qlik Sense Enterprise on Windows to ensure coverage for potentially added visualization types (e.g. the Mekko chart
+in the November 2019 release). We've made the decision to go with option (a) for a more robust set of coverage across versions of Qlik Sense Enterprise.
